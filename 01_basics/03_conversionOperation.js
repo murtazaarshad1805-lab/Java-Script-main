@@ -42,5 +42,45 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 // String conversion
 let somenumber = 33;
 let stringSomeNumber = String(somenumber);
-console.log(stringSomeNumber)                   // "33"
-console.log(typeof stringSomeNumber)            // string
+//console.log(stringSomeNumber)                   // "33"
+//console.log(typeof stringSomeNumber)            // string
+
+
+
+// ******************************** Opeartions ++++++++++++++++++++++++++++++++++
+
+let number = 3
+let negativeNumber = -number
+
+// console.log(number)             // 3
+// console.log(negativeNumber)     // -3
+// console.log(number + 3)         // 6
+
+// console.log(2 + 3)              // 5 
+// console.log(2 - 3)              // -1 
+// console.log(2 * 3)              // 6 
+// console.log(2 ** 3)             // 8 
+// console.log(2 / 3)              // 0.6666666666666666 
+// console.log(2 % 3)              // 2   
+
+
+let value = 2
+let newvalue = 4
+// console.log(value + newvalue)   // 6
+
+// console.log(1 + 2)   // 3
+// console.log("1" + 2)   // "12"
+// console.log(1 + "2")   // "12"
+// console.log("1" + "2")   // "12"
+// console.log(1 + 2 + "3")   // "33"
+// console.log("1" + 2 + 3)   // "123"
+// console.log((1 + 2) - (3 - 4))   // -9
+
+
+let num = 4
+num++
+console.log(num)   // 5
+
+let num1 = 4
+++num1
+console.log(num1)   // 5
