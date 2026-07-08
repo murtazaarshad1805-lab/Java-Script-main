@@ -36,7 +36,7 @@ let bigInt = 1234567890123456789012345678901234567890n;
 console.log(typeof bigInt); // "bigint"
 
 
-//_______________________________________________________________________________________________________________________________
+// ************************************************************************************************************************
 
 // Non-Primitive Data Types        (Call By Reference)
 
@@ -75,3 +75,42 @@ JavaScript is a DYNAMICALLY typed language, which means that you don't have to d
 The type is determined automatically based on the value assigned to the variable.
 
 */
+
+
+// ************************************************************************************************************************
+// Two Types of Memories 
+
+// Stack Memory and Heap Memory
+
+// Stack Memory: 
+// Used for static memory allocation, stores primitive data types and function calls. 
+// It has a limited size and is faster to access.
+
+// Heap Memory: 
+// Used for dynamic memory allocation, stores non-primitive data types (objects, arrays, functions). 
+// It has a larger size and is slower to access compared to stack memory.
+
+let user = "Ali";              // Storing a primitive data type (string) in stack memory
+
+let otherUser = user;          // Copying the value of 'user' to 'otherUser' (Call By Value)
+console.log(user);             // Output: "Ali" (original value remains unchanged)
+console.log(otherUser);        // Output: "Ali" (new value assigned to 'otherUser')
+
+otherUser = "Raza";            // Changing the value of 'otherUser'
+
+console.log(user);             // Output: "Ali" (original value remains unchanged)
+console.log(otherUser);        // Output: "Raza" (new value assigned to 'otherUser')
+
+
+let userDetais = {                      // Storing a non-primitive data type (object) in heap memory
+    username: "Fahad",
+    userAge: 25
+};                                      
+
+let otherUserDetails = userDetais;      // Copying the reference of 'userDetais' to 'otherUserDetails' (Call By Reference)
+console.log(userDetais);                // Output: { username: "Fahad", userAge: 25 } (original object remains unchanged)
+console.log(otherUserDetails);          // Output: { username: "Fahad", userAge: 25 } (new reference points to the same object)
+
+otherUserDetails.username = "Ali";     // Changing the value of 'username' property in 'otherUserDetails'
+console.log(otherUserDetails);          // Output: { username: "Ali", userAge: 25 } (new reference points to the same object)
+console.log(userDetais);               // Output: { username: "Ali", userAge: 25 } (original object is changed because both references point to the same object)
