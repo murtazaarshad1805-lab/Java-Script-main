@@ -1,5 +1,5 @@
 const myArr = [1, 2, 3, 4, 5]
-console.log(myArr[7]);
+console.log(myArr[4]);
 
 const myHeros = ["SuperMen", "SpiderMen", "IronMen", "Spider Noir", "Captain America"]
 console.log(myHeros[4]);
