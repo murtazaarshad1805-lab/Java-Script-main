@@ -4,7 +4,6 @@
 
 
 // Literal Object
-// Syntax of Literals object
 
 const mySym = Symbol("Key1")            // Interview Question: create Symbol and access on a object way as a key
 
