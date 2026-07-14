@@ -69,3 +69,38 @@ console.log(Object.values(myApp2));
 console.log(Object.entries(myApp2));
 
 console.log(myApp2.hasOwnProperty("isLogged"));     // Property Find
+
+
+// Object Destructuring 
+
+const course = {
+    courseName: "Javascript",
+    coursePrice: "450",
+    courseInstructor: "Muhammad Murtaza",
+}
+
+console.log(course.courseInstructor);   // Type 1: Print Object Value
+
+const {courseInstructor} = course;
+console.log(courseInstructor);          // Type 2: Print Object value without using dot (.)
+
+const {coursePrice: price} = course;         // Long name convert into small then print object value using small name (instructor)
+console.log(price); 
+
+
+// AIS's
+
+// {
+//     "name": "Murtaza",
+//     "courcename": "Javascript",             // This Block is JSON Formate
+//     "price" : 350
+// }
+
+[
+    {},
+    {},                 // This Block is Array Format and with in multiple Objects
+    {}
+]
+
+
+
