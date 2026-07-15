@@ -20,7 +20,7 @@ function addTwoNumber(num1, num2) {                         // (num1, num2) => I
 } 
 
 const result = addTwoNumber(3,97)                                           // (3,4) => Is called Arguments
- console.log("Result: " , result);
+console.log("Result: " , result);
 
 
 
