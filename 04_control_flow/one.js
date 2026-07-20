@@ -47,18 +47,23 @@
 //         console.log("Less then 1200");
 // }
 
-const userLoggedIn = true
-const debitCard = true
-const userLogedInGoogle = false
-const userLogedInEmail = true
 
-if (userLoggedIn && debitCard) {
-    console.log("Allow to buy a Cource");
-}
 
-if (userLogedInGoogle || userLogedInEmail) {
-    console.log("user Login");
-}
+// Logical Operator  ===>       AND (&& => All Condition true) ,    OR ( || => Only one condition true)
+
+
+// const userLoggedIn = true
+// const debitCard = true
+// const userLogedInGoogle = false
+// const userLogedInEmail = true
+
+// if (userLoggedIn && debitCard) {
+//     console.log("Allow to buy a Cource");
+// }
+
+// if (userLogedInGoogle || userLogedInEmail) {
+//     console.log("user Login");
+// }
 
 
 
